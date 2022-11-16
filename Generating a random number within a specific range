@@ -1,0 +1,28 @@
+import java.util.Random;
+import java.util.Scanner;
+
+class Main {
+
+    public static void main(String[] args) {
+
+        intChoice();
+
+    }
+    public static void intChoice(){
+
+        System.out.println("Entrez un nombre minimal");
+        Scanner minNumber = new Scanner(System.in);
+        int minRange=minNumber.nextInt();
+        System.out.println("Entrez un nombre maximal");
+        Scanner maxNumber = new Scanner(System.in);
+        int maxRange=maxNumber.nextInt();
+        randomGenerator(minRange, maxRange);
+
+    }
+    public static void randomGenerator(int minRange, int maxRange){
+
+        Random nb = new Random();
+        int randomInteger= nb.nextInt(minRange,maxRange);
+        System.out.println("L'entier aléatoire situé entre " + minRange + " et " + maxRange + " est " + randomInteger);
+    }
+}
