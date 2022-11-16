@@ -1,2 +1,4 @@
 # 100_days_Of_java
-In this repository i will push my new challenge. The challenge is 100 days of Java. I will try to push every day 1 new project
+The goal of this code is to create a random integer in range. 
+User define minimum and maximum of range.
+The code create integer random beetween minimum and maximum.
