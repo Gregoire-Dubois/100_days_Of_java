@@ -1,6 +1,6 @@
 # 100_days_Of_java
 
-Day 2
+Day 1
 
 The goal of this code is to create a random integer in range. 
 User define minimum and maximum of range.
