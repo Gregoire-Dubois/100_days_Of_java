@@ -1,6 +1,6 @@
 # 100_days_Of_java
 
-##Day 1
+## Day 1
 
 
 The goal of this code is to create a random integer in range. 
