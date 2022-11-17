@@ -1,0 +1,44 @@
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.time.format.FormatStyle;
+
+public class Main {
+    public static void main(String[] args) {
+
+        localedatetimefunction();
+        localdateFunction();
+        localisedDAteTimeFunction();
+        localdatetimeformatterFunction();
+
+    }
+
+    public static void localedatetimefunction(){
+        LocalDateTime now = LocalDateTime.now();
+        String time = now.format(DateTimeFormatter.ofLocalizedDateTime(FormatStyle.SHORT));
+        System.out.println(time);
+    }
+
+    public static void localdateFunction(){
+        LocalDate date = LocalDate.now();
+        String x = date.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.SHORT));
+        System.out.println(x);
+
+    }
+
+    public static void localisedDAteTimeFunction(){
+        LocalDateTime date2 = LocalDateTime.now();
+        String x2 = date2.format(DateTimeFormatter.ofLocalizedDateTime(FormatStyle.MEDIUM));
+        System.out.println(x2);
+
+    }
+
+    public static void localdatetimeformatterFunction(){
+        LocalDate date = LocalDate.now();
+        DateTimeFormatter format = DateTimeFormatter.ofPattern("yyyy MM dd");
+        String txtDate = date.format(format);
+        LocalDate dateReturn = LocalDate.parse(txtDate, format);
+        System.out.println(dateReturn);
+    }
+    
+}
