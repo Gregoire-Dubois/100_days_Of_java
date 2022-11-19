@@ -11,7 +11,7 @@ The code create integer random beetween minimum and maximum.
 
 This code is to discover formating with local DateTime
 
-## [Day 3 - check if numbers in range are prime number or not and display result every 2 secondes](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Checker%20of%20prime%20numbers%20in%20a%20rang)
+## [Day 3 - Check if numbers in range are prime number or not and display result every 2 secondes](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Checker%20of%20prime%20numbers%20in%20a%20rang)
 
 Whith this code, user give two integers for make a range. 
 First integer is a minimal of the range. Second integer is the maximal of the range. 
