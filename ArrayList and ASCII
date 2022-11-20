@@ -27,7 +27,6 @@ public class Main {
             //Remove one caractere with his index
             caracteresList.remove(numberRemove);
 
-            //System.out.println("loop vaut :"  + loop + "number remove vaut  " + numberRemove + " la taille vaut : " + caracteresList.size());
             System.out.println("La liste restifiée après suppression de l'index : "+ numberRemove  + " est " + caracteresList);
 
             loop--;
