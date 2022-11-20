@@ -18,7 +18,7 @@ public class Main {
 
         int loop = caracteresList.size();
 
-        while (loop>1){
+        while (loop>0){
 
             // Genereate random integer
             Random integerRandom = new Random();
@@ -28,7 +28,7 @@ public class Main {
             caracteresList.remove(numberRemove);
 
             //System.out.println("loop vaut :"  + loop + "number remove vaut  " + numberRemove + " la taille vaut : " + caracteresList.size());
-            System.out.println("La liste restifiée après suppression de l'index :"  + caracteresList);
+            System.out.println("La liste restifiée après suppression de l'index : "+ numberRemove  + " est " + caracteresList);
 
             loop--;
         }
