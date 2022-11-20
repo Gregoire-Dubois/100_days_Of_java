@@ -17,7 +17,7 @@ Whith this code, user give two integers for make a range.
 First integer is a minimal of the range. Second integer is the maximal of the range. 
 The code browse the range and display for every numbers if they are prime number or not 
 
-## [Day 4 - REmove items from a ArrayList](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/ArrayList%20and%20ASCII)
+## [Day 4 - Remove items from a ArrayList](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/ArrayList%20and%20ASCII)
 
 In a first time, this code create a ArrayList. In this ArrayList code add one caractere bye zone index.
 Only caractere beetween 33 and 127 include are use. 
