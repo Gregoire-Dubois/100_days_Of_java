@@ -26,3 +26,7 @@ The code stop when the ArrayList is empty.
 
 ## [Day 5 - Creating a list with filtered items from other list](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Creating%20a%20list%20with%20filtered%20items%20from%20other%20list)
 
+In this code, I use again the code for first numbers. 
+The goal of the code is to create a liste of first numbers and filtered it.
+For filtered, I don't use foor loop and condition. 
+I prefer use Stream.filter() and collect().
