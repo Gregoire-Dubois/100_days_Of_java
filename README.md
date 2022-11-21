@@ -23,3 +23,6 @@ In a first time, this code create a ArrayList. In this ArrayList code add one ca
 Only caractere beetween 33 and 127 include are use. 
 theire caractere are add in the ArrayList and with random number one caractere is remove.
 The code stop when the ArrayList is empty.
+
+## [Day 5 - Creating a list with filtered items from other list](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Creating%20a%20list%20with%20filtered%20items%20from%20other%20list)
+
