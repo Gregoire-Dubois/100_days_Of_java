@@ -1,0 +1,17 @@
+import java.text.MessageFormat;
+import java.util.Date;
+
+public class Main {
+    public static void main(String[] args) {
+        messageFormat();
+    }
+
+    private static void messageFormat(){
+        String firstName = "Grégoire";
+        String lastName = "Dubois";
+        Date now = new Date(System.currentTimeMillis());
+        String result = MessageFormat.format("My first name is {0} and my last name is {1}. We are {2}", firstName, lastName, now);
+        System.out.print(result);
+    }
+
+}
