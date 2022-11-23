@@ -33,4 +33,4 @@ I prefer use Stream.filter() and collect().
 
 ## [Day 6 - Formating message with MessageFormat()](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/MessageFormat)
 
-
+With this code I format text with class MessageFormat().
