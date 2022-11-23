@@ -30,3 +30,7 @@ In this code, I use again the code for first numbers.
 The goal of the code is to create a liste of first numbers and filtered it.
 For filtered, I don't use foor loop and condition. 
 I prefer use Stream.filter() and collect().
+
+## [Day 6 - Formating message with MessageFormat()](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/MessageFormat)
+
+
