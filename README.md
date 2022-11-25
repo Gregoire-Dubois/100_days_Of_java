@@ -37,4 +37,5 @@ With this code I format text with class MessageFormat().
 
 ## [Day 7 - Display result with enumeration()](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Fibonacci%20%26%20enumeration())
 This code generate 50 iterations in fibonacci sequence. 
+The result is siplay with enumeration and collection class
 
