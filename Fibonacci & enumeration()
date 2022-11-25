@@ -1,0 +1,33 @@
+import java.util.Collections;
+import java.util.Enumeration;
+import java.util.ArrayList;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        int fx= 0;
+        int n1 = 0;
+        int n2 = 1;
+        int i = 0;
+
+        ArrayList fibonnacciNumbers = new ArrayList();
+
+        System.out.println(fx);
+        System.out.println(n2);
+
+        while (i<50) {
+            fx=n1+n2;
+            n1=n2;
+            n2=fx;
+            fibonnacciNumbers.add(fx);
+            i++;
+        }
+
+        Enumeration enumerationList = Collections.enumeration(fibonnacciNumbers);
+
+        while (enumerationList.hasMoreElements()) {
+            System.out.println(enumerationList.nextElement());
+        }
+    }
+}
