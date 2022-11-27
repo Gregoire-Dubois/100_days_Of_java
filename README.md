@@ -39,6 +39,6 @@ With this code I format text with class MessageFormat().
 This code generate 50 iterations in fibonacci sequence. 
 The result is siplay with enumeration and collection class
 
-## [Day 8 - Create Class()](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Create%20Class)
+## [Day 8 - Create Class](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Create%20Class)
 
 
