@@ -1,0 +1,46 @@
+import java.text.MessageFormat;
+
+public class ContactClass {
+
+    public static void main(String[] args) {
+
+        ContactFriend nf = new ContactFriend("Tony", "Stark", " Malibu Point", "10880", "90265", "Malibu", "Californie","USA");
+    }
+
+    public static class ContactFriend {
+        String firstName;
+        String lastName;
+        String street;
+        String streetNumber;
+        String cityNumber;
+        String city;
+        String state;
+        String country;
+
+        public ContactFriend(){
+            firstName ="";
+            lastName = "";
+            street = "";
+            streetNumber = "";
+            cityNumber = "";
+            city = "";
+            state ="";
+            country = "";
+        }
+
+        public ContactFriend(String mfirstName, String mlastName, String mstreet, String mstreetNumber, String mcityNumber, String mcity, String mstate, String mcountry){
+            firstName = mfirstName;
+            lastName = mlastName;
+            street = mstreet;
+            streetNumber = mstreetNumber;
+            cityNumber = mcityNumber;
+            city = mcity;
+            state = mstate;
+            country = mcountry;
+
+            String resultContact = MessageFormat.format("Le contact {0} {1}, est domicilié au {2} {3} dans la ville de {4} ({5}) ({6})", mfirstName, mlastName, mstreetNumber, mstreet, mcity, mcityNumber, mcountry);
+
+            System.out.println(resultContact);
+        }
+    }
+}
