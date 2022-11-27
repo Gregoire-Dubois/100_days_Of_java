@@ -17,17 +17,6 @@ public class ContactClass {
         String state;
         String country;
 
-        public ContactFriend(){
-            firstName ="";
-            lastName = "";
-            street = "";
-            streetNumber = "";
-            cityNumber = "";
-            city = "";
-            state ="";
-            country = "";
-        }
-
         public ContactFriend(String mfirstName, String mlastName, String mstreet, String mstreetNumber, String mcityNumber, String mcity, String mstate, String mcountry){
             firstName = mfirstName;
             lastName = mlastName;
