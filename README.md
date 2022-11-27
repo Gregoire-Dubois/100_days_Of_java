@@ -40,5 +40,5 @@ This code generate 50 iterations in fibonacci sequence.
 The result is siplay with enumeration and collection class
 
 ## [Day 8 - Create Class](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Create%20Class)
-
+Today, the goal of this exercice is to create a class and display message with class's parameters.
 
