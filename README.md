@@ -44,4 +44,6 @@ Today, the goal of this exercice is to create a class and display message with c
 The message is format with MessageFormat()
 
 ## [Day 9 - getter and setter in class](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Getter%20%20Setter%20and%20private%20access)
+Today, I use getter and setter to acces at variable's class. 
+With this methode, it's possible to protect the variable from the outside of class
 
