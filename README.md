@@ -43,3 +43,5 @@ The result is siplay with enumeration and collection class
 Today, the goal of this exercice is to create a class and display message with class's parameters.
 The message is format with MessageFormat()
 
+## [Day 9 - getter and setter in class](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Getter%20%20Setter%20and%20private%20access)
+
