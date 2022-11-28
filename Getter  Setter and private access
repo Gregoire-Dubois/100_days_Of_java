@@ -1,0 +1,68 @@
+public class Personne {
+
+    public static void main(String[] args) {
+
+        newPersonne guy1 = new newPersonne("Tony", "Stark", "29/05/1970", "masculin");
+        System.out.println("La personne dénommée "+ guy1.getFirstname() + " " + guy1.getLastName() + " est née le " + guy1.getBirthday() + " et est de sexe " + guy1.getGender());
+
+        newPersonne guy2 = new newPersonne("Captain", "America", "04/07/1920", "masculin");
+        System.out.println("La personne dénommée "+ guy2.getFirstname() + " " + guy2.getLastName() + " est née le " + guy2.getBirthday() + " et est de sexe " + guy2.getGender());
+
+        newPersonne girl1 = new newPersonne("Amélie", "Nothomb", "09/07/1966", "féminin");
+        System.out.println("La personne dénommée "+ girl1.getFirstname() + " " + girl1.getLastName() + " est née le " + girl1.getBirthday() + " et est de sexe " + girl1.getGender());
+        
+        guy2.setFirstname("Kilian");
+        guy2.setLastName("Jornet");
+        guy2.setBirthday("27/10/1987");
+        guy2.setGender("masculin");
+        System.out.println("La personne dénommée "+ guy2.getFirstname() + " " + guy2.getLastName() + " est née le " + guy2.getBirthday() + " et est de sexe " + guy2.getGender());
+    }
+
+    public static class newPersonne{
+
+        private String firstname;
+        private String lastName;
+        private String birthday;
+        private String gender;
+
+        public newPersonne(String mfirstname, String mlastName, String mbirthday, String mgender){
+            firstname = mfirstname;
+            lastName = mlastName;
+            birthday = mbirthday;
+            gender = mgender;
+        }
+
+        //****************** SETTER ********************************
+
+        public void setFirstname(String mfirstname){
+            firstname = mfirstname;
+        }
+
+        public void setLastName(String mlastName){
+            lastName = mlastName;
+        }
+        public void setBirthday(String mbirthday){
+            birthday = mbirthday;
+        }
+        public void setGender(String mgender){
+            gender = mgender;
+        }
+
+        //****************** GETTER ********************************
+
+        public String getFirstname(){
+            return  firstname;
+        }
+
+        public String getLastName(){
+            return  lastName;
+        }
+
+        public String getBirthday(){
+            return  birthday;
+        }
+        public String getGender(){
+            return  gender;
+        }
+    }
+}
