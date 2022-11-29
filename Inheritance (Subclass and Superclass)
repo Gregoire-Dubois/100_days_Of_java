@@ -1,0 +1,39 @@
+public class Heritage {
+    public static void main(String[] args) {
+
+        Personne personne = new Personne("Greg");
+        personne.speack();
+
+        Student personne2 = new Student("Grégoire", " apprenti développeur");
+        personne2.speack();
+        personne2.work();
+    }
+
+    public static class Personne{
+
+        public Personne(String firstName){
+            this.mFirstName = firstName;
+        }
+
+        public void speack(){
+            System.out.println("Bonjour mon prénom est : " + this.mFirstName);
+        }
+
+        protected String mFirstName;
+    }
+
+    public static class Student extends Personne {
+
+        public Student(String firstName, String activity) {
+            super(firstName);
+            this.mWork = activity;
+        }
+
+        public void work(){
+            System.out.println("mon activité est " + this.mWork );
+
+        }
+        private String mWork;
+    }
+}
+
