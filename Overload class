@@ -1,0 +1,48 @@
+import java.text.MessageFormat;
+
+public class Surcharge {
+    public static void main(String[] args) {
+
+        ContactPersonne personne = new ContactPersonne("Tony", "Stark", 10880, "Malibu Point", "Malibou", "911", "tonystark@gmail.com");
+        ContactPersonne personne1 = new ContactPersonne("Tony");
+        personne.sayWhereYouLive();
+        personne1.sayWhereYouLive();
+    }
+    public static class ContactPersonne{
+
+        protected String firstName;
+        protected String lastName;
+        protected Integer numberOfStreet;
+        protected String adress;
+        protected String town;
+        protected String phoneNumber;
+        protected String mail;
+
+        public ContactPersonne(String mfirstName, String mLastName, Integer mNumberOfStreet, String mAdress, String mTown, String mPhoneNumber, String mMail){
+            this.firstName = mfirstName;
+            this.lastName = mLastName;
+            this.numberOfStreet = mNumberOfStreet;
+            this.adress = mAdress;
+            this.town = mTown;
+            this.phoneNumber = mPhoneNumber;
+            this.mail= mMail;
+
+        }
+
+        public ContactPersonne(String mfirstName){
+            this.firstName = mfirstName;
+            this.lastName = "Stark";
+            this.numberOfStreet = 0;
+            this.adress = "inconnu";
+            this.town = "Top secret";
+            this.phoneNumber = "911";
+            this.mail= "-";
+
+        }
+
+        public void sayWhereYouLive(){
+            String res = MessageFormat.format("La personne nommée {0} {1} déclare habiter au {2} {3} ({4}). Son numero de tel est {5} et son mail est {6}.", this.firstName, this.lastName, this.numberOfStreet, this.adress, this.town, this.phoneNumber, this.mail);
+            System.out.println(res);
+        }
+    }
+}
