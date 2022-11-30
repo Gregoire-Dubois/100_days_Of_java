@@ -48,3 +48,6 @@ Today, I use getter and setter to acces at variable's class.
 With this methode, it's possible to protect the variable from the outside of class
 
 ## [Day 10 - Inheritance](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Inheritance%20(Subclass%20and%20Superclass))
+
+## [Day 11 - Overload](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Overload%20class)
+
