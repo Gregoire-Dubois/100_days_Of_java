@@ -5,8 +5,10 @@ public class Surcharge {
 
         ContactPersonne personne = new ContactPersonne("Tony", "Stark", 10880, "Malibu Point", "Malibou", "911", "tonystark@gmail.com");
         ContactPersonne personne1 = new ContactPersonne("Tony");
+        ContactPersonne personne2 = new ContactPersonne("Jean-Paul", "Belmondo");
         personne.sayWhereYouLive();
         personne1.sayWhereYouLive();
+        personne2.sayWhereYouLive();
     }
     public static class ContactPersonne{
 
@@ -26,7 +28,6 @@ public class Surcharge {
             this.town = mTown;
             this.phoneNumber = mPhoneNumber;
             this.mail= mMail;
-
         }
 
         public ContactPersonne(String mfirstName){
@@ -37,6 +38,17 @@ public class Surcharge {
             this.town = "Top secret";
             this.phoneNumber = "911";
             this.mail= "-";
+
+        }
+
+        public ContactPersonne(String mfirstName, String mLastName){
+            this.firstName = mfirstName;
+            this.lastName = mLastName;
+            this.numberOfStreet = 999;
+            this.adress = "inconnu";
+            this.town = "inconnu";
+            this.phoneNumber = "inconnu";
+            this.mail= "NC";
 
         }
 
