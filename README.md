@@ -51,6 +51,6 @@ With this methode, it's possible to protect the variable from the outside of cla
 
 ## [Day 11 - Overload](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Overload%20class)
 
-## [Day 12 - Overload](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Sort%20numbers%20and%20keep%20the%20bigger)
+## [Day 12 - Sort numbers and keep the bigger](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Sort%20numbers%20and%20keep%20the%20bigger)
 
 
