@@ -1,0 +1,35 @@
+import java.util.ArrayList;
+import java.util.Random;
+import java.util.Collections;
+import java.util.List;
+
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        List recipient = new ArrayList<Integer>();
+        int i = 0;
+        while (i<100) {
+            Random randomNumber = new Random();
+            int number = randomNumber.nextInt(1000);
+            recipient.add(i, number);
+            i++;
+        }
+
+        Collections.sort(recipient);
+        System.out.println("La liste filtrée dans l'ordre croissant : " + recipient);
+
+        int min = 0;
+        int max = 0;
+
+        for(int j = 0; j < recipient.size(); j++){
+            if((int)recipient.get(j) > min){
+                // System.out.println(recipient.get(j));
+                max = (int)recipient.get(j);
+
+            }
+        }
+        System.out.println("Le nombre le plus grand est : " + max);
+    }
+}
