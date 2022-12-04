@@ -49,6 +49,9 @@ With this methode, it's possible to protect the variable from the outside of cla
 
 ## [Day 10 - Inheritance](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Inheritance%20(Subclass%20and%20Superclass))
 
+In this code I approach Inheritance. I create mother class (Personne) and daughter class (Student) retrieve Personne's methodes
+
+
 ## [Day 11 - Overload](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Overload%20class)
 
 ## [Day 12 - Sort numbers](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Sort%20numbers)
