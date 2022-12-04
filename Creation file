@@ -1,0 +1,21 @@
+import java.io.File;
+import java.io.IOException;
+
+public class Main {
+    public static void main(String[] args) {
+
+        try{
+            File file = new File("path to the file/file.txt");
+            if (file.isFile()){
+                System.out.println("le fichier" + file+ " existe deja");
+            }else {
+                file.createNewFile();
+                System.out.println("Le fichier a été créé");
+            }
+        }catch(IOException e) {
+            System.out.println("Le chemin d'accès n'existe pas");
+        }finally {
+            System.out.println("Fin de process");
+        }
+    }
+}
