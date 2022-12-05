@@ -60,5 +60,5 @@ In this code I approach Inheritance. I create mother class (Personne) and daught
 
 ## [Day 14 - Creating text file](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Creation%20file)
 
-## [Day 15 - Creating text file and wrintte in](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Create%20and%20write%20in%20text%20file)
+## [Day 15 - Creating text file and write in](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Create%20and%20write%20in%20text%20file)
 
