@@ -1,0 +1,23 @@
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class Main {
+    public static void main(String[] args) {
+
+        try {
+            String message = "it's working !";
+            File pathFile = new File("/path to the file.txt");
+            FileWriter writter = new FileWriter(pathFile);
+
+            writter.write(message);
+            writter.close();
+
+        }catch (IOException e){
+            System.out.println("Path doesn't exist");
+        }finally {
+            System.out.println("Process compled");
+        }
+    }
+}
+
