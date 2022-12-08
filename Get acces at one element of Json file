@@ -1,0 +1,20 @@
+package org.example;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
+import java.io.*;
+
+public class Main {
+    public static void main(String[] args) {
+
+        try {
+
+            JsonParser jsonParser = new JsonParser();
+            JsonObject jsonFile = (JsonObject) jsonParser.parse(new FileReader("/Users/gregoiredubois/Documents/programmation/java/100_days_of_java/red_json_file/src/main/java/org/example/weather.json"));
+            System.out.println("Lecture du fichier Json " + jsonFile.get("current"));
+            System.out.println("Lecture du fichier Json sur un élément " + jsonFile.getAsJsonObject("current").get("temperature"));
+
+        }catch (IOException e){
+            System.out.println(e);
+        }
+    }
+}
