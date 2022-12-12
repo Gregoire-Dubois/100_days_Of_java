@@ -1,0 +1,29 @@
+package org.example;
+import java.io.*;
+
+public class Main {
+    public static void main(String[] args) {
+
+        ReaderTxtFile txtReader = new ReaderTxtFile("path to the text.txt");
+    }
+    protected static class ReaderTxtFile{
+
+        protected ReaderTxtFile(String mPath){
+            this.path = mPath;
+
+            try {
+                File txt = new File(path);
+                BufferedReader br = new BufferedReader(new FileReader(txt));
+                String str;
+                while ((str = br.readLine()) != null) {
+                    System.out.println(str);
+                }
+                br.close();
+                
+            } catch (IOException e) {
+                System.out.println(e);
+            }
+        }
+        String path;
+    }
+}
