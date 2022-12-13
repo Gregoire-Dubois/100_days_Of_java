@@ -1,0 +1,45 @@
+package org.example;
+import java.io.*;
+import java.text.MessageFormat;
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        AnalyzerFiler af = new AnalyzerFiler();
+    }
+
+    protected static class AnalyzerFiler{
+        protected AnalyzerFiler(){
+
+            try{
+                File txtFile = new File("path to loremIpsumFile.txt");
+                BufferedReader br = new BufferedReader(new FileReader(txtFile));
+
+                ArrayList <Character> letters = new ArrayList<Character>();
+                int index = 0;
+                while ((index = br.read()) != -1){
+                    char car = (char) index;
+                    //System.out.println(car);
+                    letters.add(car);
+                }
+
+                br.close();
+
+                char wanted = 'A';
+                int count = 0;
+
+                for (int i = 0; i<letters.size(); i++){
+                    if(letters.get(i)==wanted){
+                        count++;
+                    }
+                }
+                String  result = MessageFormat.format("La lettre est apparue {0} est apparue {1} fois.", wanted, count);
+                System.out.println(result);
+
+            }catch (IOException e){
+                System.out.println(e);
+            }
+        }
+    }
+}
+
