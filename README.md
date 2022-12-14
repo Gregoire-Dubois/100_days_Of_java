@@ -71,3 +71,5 @@ https://weatherstack.com/
 
 ## [Day 19 - Reade text File and count specific caractere](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/BufferedReader%20and%20count%20letter%20'A'%20in%20text%20file)
 
+## [Day 20 - Delete empty folder](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Remove%20folder)
+
