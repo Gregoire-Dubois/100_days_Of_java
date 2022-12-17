@@ -73,3 +73,5 @@ https://weatherstack.com/
 
 ## [Day 20 - Delete empty folder](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Remove%20folder)
 
+## [Day 21 - Connect to SQL data base](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Connect%20to%20SQL%20data%20base)
+
