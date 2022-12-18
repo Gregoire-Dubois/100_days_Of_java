@@ -1,0 +1,72 @@
+import com.google.gson.*;
+import java.io.*;
+import java.net.URL;
+import java.net.URLConnection;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        GetRequest gr = new GetRequest("http://api.weatherstack.com/current%20?%20access_key%20=%20YOUR_ACCESS_KEY%20&%20query%20=%20Lyon","path to json file for wrting");
+        TemperatureDisplay td = new TemperatureDisplay("path to json file for reading");
+    }
+
+    protected static class GetRequest{
+
+        public GetRequest(String mUrl, String mPath){
+            this.url = mUrl;
+            this.path = mPath;
+
+            try {
+                URL site = new URL(this.url);
+                URLConnection con = site.openConnection();
+
+                BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()));
+                String inputLine;
+
+                while ((inputLine = in.readLine()) != null){
+                    System.out.println(inputLine);
+
+                    try {
+                        File destination = new File(this.path);
+                        FileWriter bw = new FileWriter(destination);
+                        bw.write(inputLine);
+
+                        bw.close();
+                    }catch (IOException e){
+                        System.out.println("Le chemin d'accès n'existe pas" );
+                    }
+                }
+                in.close();
+
+            }catch (IOException e){
+                System.out.println("URL mal formée");
+            }
+        }
+
+        private String url;
+        private String path;
+    }
+
+    protected static class TemperatureDisplay{
+        public TemperatureDisplay(String mPath){
+            this.pathToFileJson = mPath;
+            try {
+
+                JsonParser jsonParser = new JsonParser();
+                JsonObject jsonFile = (JsonObject) jsonParser.parse(new FileReader("/Users/gregoiredubois/Documents/programmation/java/100_days_of_java/testsGetURL/weather.json"));
+                System.out.println("Lecture du fichier Json " + jsonFile.get("current"));
+                System.out.println("Lecture du fichier Json sur un élément " + jsonFile.getAsJsonObject("current").get("temperature"));
+
+            }catch (IOException e){
+                System.out.println(e);
+            }
+        }
+        String pathToFileJson;
+    }
+}
+
+
+
+
+
