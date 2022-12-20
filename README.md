@@ -76,3 +76,6 @@ https://weatherstack.com/
 ## [Day 21 - Connect to SQL data base](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Connect%20to%20SQL%20data%20base)
 
 ## [Day 22 - GET API and save response in Json file](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Get%20API%20and%20save%20response%20in%20Json%20file)
+
+## [Day 23 - First step with abstract class](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Abstract%20Class)
+
