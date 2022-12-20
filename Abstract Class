@@ -1,0 +1,102 @@
+public class Main {
+
+    public static void main(String[] args) {
+
+        AnimalWorld sphaerophoriaScripta = new SphaerophoriaScripta();
+        sphaerophoriaScripta.move();
+
+        AnimalWorld elephant = new Elephant();
+        elephant.move();
+        elephant.eat();
+
+        AnimalWorld atlas = new Atlas();
+        atlas.eat();
+
+        AnimalWorld dog = new Dog();
+        dog.eat();
+        dog.breathe();
+    }
+
+    abstract static class AnimalWorld{
+        abstract void eat();
+
+        abstract void move();
+
+         protected void breathe(){
+             System.out.println("L'animal respire à l'air");
+        }
+    }
+
+    abstract static class Invertebrates extends AnimalWorld{
+
+
+    }
+
+    abstract static class Vertebrates extends AnimalWorld{
+
+
+    }
+
+    protected static class SphaerophoriaScripta extends Invertebrates{
+
+        protected SphaerophoriaScripta(){
+
+        }
+        @Override
+        protected void eat(){System.out.println("Insecte qui se nourrit de fleurs de nectare");}
+        @Override
+        protected void move(){System.out.println("Insecte qui vol");}
+
+    }
+
+    protected static class Elephant extends Vertebrates{
+
+        protected Elephant(){
+
+        }
+        @Override
+
+        protected void eat() {
+            System.out.println("Animal herbivor");
+        }
+        @Override
+
+        protected void move() {
+            System.out.println( "Animal qui se déplace en marchant sur 4 jambes");
+        }
+
+    }
+
+    protected static class Atlas extends Invertebrates{
+
+        protected Atlas(){
+
+        }
+        @Override
+        protected void eat() {
+            System.out.println("Insecte qui se nourrit de certaines plantes");
+        }
+
+        @Override
+        protected void move() {
+            System.out.println("Insecte volant");
+        }
+    }
+
+    protected static class Dog extends Vertebrates{
+
+        protected Dog(){
+
+        }
+
+        @Override
+       protected void eat() {
+            System.out.println("Animal qui se nourrit des croquettes données par son maître");
+        }
+
+        @Override
+       protected void move() {
+            System.out.println("Animal qui marche sur 4 pates");
+        }
+    }
+}
