@@ -81,5 +81,4 @@ https://weatherstack.com/
 
 ## [Day 24 - Display file in child folder whit File.walk](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/File%20walk)
 
-## [Day 25 - Display file in child folder whit File.walk](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/File%20Walk%20and%20save%20in%20text%20file
-)
+## [Day 25 - Display file in child folder whit File.walk](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/File%20Walk%20and%20save%20in%20text%20file)
