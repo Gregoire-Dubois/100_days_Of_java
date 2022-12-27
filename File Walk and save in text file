@@ -1,0 +1,68 @@
+package org.example;
+
+import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.stream.Stream;
+
+public class Main {
+    public static void main(String[] args) {
+
+        FileWalk filewalk = new FileWalk("Path to target directory ", "Path for save in text file");
+
+    }
+
+    protected static class FileWalk{
+
+        protected FileWalk(String mTargetFolder, String mSave){
+
+            this.save = mSave;
+            this.targetfolder = mTargetFolder;
+
+            // Initialisation of Array List
+            ArrayList<Object> listFiles = new ArrayList<>();
+
+            File saveFile = new File(this.save);
+
+            try (Stream <Path> paths = Files.walk(Paths.get(this.targetfolder))){
+
+                if(!saveFile.exists()){
+                    saveFile.createNewFile();
+                }
+
+                // walk in target folder
+                paths.filter(Files::isRegularFile)
+                        .forEach(listFiles::add);
+
+                // display in terminal every paths and names of listFiles
+                for (Object listFile : listFiles) {
+                    System.out.println(listFile);
+                }
+
+            }catch (Exception e){
+                System.out.println(e);
+            }
+
+            try{
+                FileWriter fw = new FileWriter(saveFile);
+
+                // print in text file every paths and files names with back line
+                for(int i = 0; i < listFiles.size(); i++){
+                    fw.write(listFiles.get(i).toString()+ "\n");
+                }
+                fw.close();
+
+            }catch (Exception e){
+                System.out.print("erreur" + e);
+            }
+        }
+        
+        //localisation of target folder
+        String targetfolder;
+
+        //localisation for recuperation in txt file
+        String save;
+    }
+}
