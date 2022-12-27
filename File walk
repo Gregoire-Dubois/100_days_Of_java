@@ -1,0 +1,31 @@
+package org.example;
+
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.stream.Stream;
+
+public class Main {
+    public static void main(String[] args) {
+
+        // Localisation of target folder
+        String targetfolder = "path to target folder";
+        // Initialisation of Array List
+        ArrayList<Object> listFiles = new ArrayList<>();
+
+        try (Stream <Path> paths = Files.walk(Paths.get(targetfolder))){
+
+            // walk in target folder
+            paths.filter(Files::isRegularFile)
+                    .forEach(listFiles::add);
+            // make a back line in terminal for every name of files
+            for (Object listFile : listFiles) {
+                System.out.println(listFile);
+            }
+
+        }catch (Exception e){
+            System.out.println(e);
+        }
+    }
+}
