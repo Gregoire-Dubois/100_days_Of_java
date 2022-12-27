@@ -79,3 +79,6 @@ https://weatherstack.com/
 
 ## [Day 23 - First step with abstract class](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Abstract%20Class)
 
+## [Day 24 - Display file in child folder whit File.walk](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/File%20walk)
+
+
