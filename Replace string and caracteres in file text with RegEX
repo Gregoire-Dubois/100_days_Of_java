@@ -1,0 +1,77 @@
+import java.io.*;
+import java.util.ArrayList;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class Main {
+    public static void main(String[] args) {
+        FirstStep a = new FirstStep();
+        SecondStep b = new SecondStep();
+
+    }
+
+    protected static class FirstStep{
+        protected FirstStep(){
+
+            // lecture du fichier recuperation.txt et remplacement de "/Users/gregoiredubois/Documents/CG compagnies/" par "S:\EXCALIBUR\CG compagnies\"
+            // écriture dans le fichier step1
+            try {
+                File txtFileSource = new File("/Users/gregoiredubois/Documents/programmation/java/100_days_of_java/FileWalk and save in text file/src/main/java/org/example/recuperation.txt");
+                BufferedReader br = new BufferedReader(new FileReader(txtFileSource));
+
+                FileWriter step1 = new FileWriter("/Users/gregoiredubois/Documents/programmation/java/100_days_of_java/ModifyTextFile/src/main/java/org/example/step1.txt");
+                BufferedWriter bw = new BufferedWriter(step1);
+
+                String line;
+                ArrayList s = new ArrayList<>();
+
+                while ((line = br.readLine()) != null){
+                    Pattern p = Pattern.compile("/Users/gregoiredubois/Documents/CG compagnies/");
+                    Matcher m = p.matcher(line);
+                    s.add(m.replaceAll("S:\\\\EXCALIBUR\\\\CG compagnies\\\\"));
+                }
+
+                for(int i =0; i<s.size();i++){
+                    bw.write(s.get(i).toString()+"\n");
+                }
+
+            }catch (IOException e){
+                System.out.println(e);
+            }
+        }
+    }
+
+
+    protected static class SecondStep{
+        protected SecondStep(){
+            // lecture du fichier step1.txt et remplacement de "/" par "\"
+            // écriture dans le fichier step2
+
+            try{
+
+                File txtFileSource = new File("/Users/gregoiredubois/Documents/programmation/java/100_days_of_java/FileWalk and save in text file/src/main/java/org/example/step1.txt");
+                BufferedReader br = new BufferedReader(new FileReader(txtFileSource));
+
+                FileWriter step2 = new FileWriter("/Users/gregoiredubois/Documents/programmation/java/100_days_of_java/ModifyTextFile/src/main/java/org/example/step2.txt");
+                BufferedWriter bw2 = new BufferedWriter(step2);
+
+                ArrayList s = new ArrayList<>();
+
+                String line;
+
+                while ((line = br.readLine()) != null){
+                    Pattern p = Pattern.compile("/");
+                    Matcher m = p.matcher(line);
+                    s.add(m.replaceAll("\\\\"));
+                }
+
+                for(int i =0; i<s.size();i++){
+                    bw2.write(s.get(i).toString()+"\n");
+                }
+
+            }catch (IOException e){
+                System.out.println(e);
+            }
+        }
+    }
+}
