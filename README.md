@@ -83,4 +83,4 @@ https://weatherstack.com/
 
 ## [Day 25 - Display files in children folder whith File.walk() and save the result ](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/File%20Walk%20and%20save%20in%20text%20file)
 
-## [Day 26 - Display files in children folder whith File.walk() and save the result ](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Replace%20strings%20and%20caracteres%20in%20file%20text%20with%20RegEX)
+## [Day 26 - Modify file text whit RegEX](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Replace%20strings%20and%20caracteres%20in%20file%20text%20with%20RegEX)
