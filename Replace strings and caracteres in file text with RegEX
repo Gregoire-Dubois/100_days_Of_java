@@ -5,70 +5,39 @@ import java.util.regex.Pattern;
 
 public class Main {
     public static void main(String[] args) {
-        FirstStep a = new FirstStep();
-        SecondStep b = new SecondStep();
+        Modificator a = new Modificator();
+        a.modifyText("/Users/gregoiredubois/Documents/programmation/java/100_days_of_java/FileWalk and save in text file/src/main/java/org/example/recuperation.txt",
+                "/Users/gregoiredubois/Documents/programmation/java/100_days_of_java/ModifyTextFile/src/main/java/org/example/step1.txt",
+                "/Users/gregoiredubois/Documents/CG compagnies/",
+                "S:\\\\EXCALIBUR\\\\CG compagnies\\\\");
 
+        a.modifyText("/Users/gregoiredubois/Documents/programmation/java/100_days_of_java/FileWalk and save in text file/src/main/java/org/example/step1.txt",
+                "/Users/gregoiredubois/Documents/programmation/java/100_days_of_java/ModifyTextFile/src/main/java/org/example/step2.txt",
+                "/",
+                "\\\\");
     }
 
-    protected static class FirstStep{
-        protected FirstStep(){
-
-            // lecture du fichier recuperation.txt et remplacement de "/Users/gregoiredubois/Documents/CG compagnies/" par "S:\EXCALIBUR\CG compagnies\"
-            // écriture dans le fichier step1
+    protected static class Modificator{
+        protected Modificator(){
+         }
+        protected static void modifyText(String origin, String destination, String pattern, String replace){
             try {
-                File txtFileSource = new File("/Users/gregoiredubois/Documents/programmation/java/100_days_of_java/FileWalk and save in text file/src/main/java/org/example/recuperation.txt");
+                File txtFileSource = new File(origin);
                 BufferedReader br = new BufferedReader(new FileReader(txtFileSource));
-
-                FileWriter step1 = new FileWriter("/Users/gregoiredubois/Documents/programmation/java/100_days_of_java/ModifyTextFile/src/main/java/org/example/step1.txt");
+                FileWriter step1 = new FileWriter(destination);
                 BufferedWriter bw = new BufferedWriter(step1);
-
                 String line;
                 ArrayList s = new ArrayList<>();
 
                 while ((line = br.readLine()) != null){
-                    Pattern p = Pattern.compile("/Users/gregoiredubois/Documents/CG compagnies/");
+                    Pattern p = Pattern.compile(pattern);
                     Matcher m = p.matcher(line);
-                    s.add(m.replaceAll("S:\\\\EXCALIBUR\\\\CG compagnies\\\\"));
+                    s.add(m.replaceAll(replace));
                 }
 
                 for(int i =0; i<s.size();i++){
                     bw.write(s.get(i).toString()+"\n");
                 }
-
-            }catch (IOException e){
-                System.out.println(e);
-            }
-        }
-    }
-
-
-    protected static class SecondStep{
-        protected SecondStep(){
-            // lecture du fichier step1.txt et remplacement de "/" par "\"
-            // écriture dans le fichier step2
-
-            try{
-
-                File txtFileSource = new File("/Users/gregoiredubois/Documents/programmation/java/100_days_of_java/FileWalk and save in text file/src/main/java/org/example/step1.txt");
-                BufferedReader br = new BufferedReader(new FileReader(txtFileSource));
-
-                FileWriter step2 = new FileWriter("/Users/gregoiredubois/Documents/programmation/java/100_days_of_java/ModifyTextFile/src/main/java/org/example/step2.txt");
-                BufferedWriter bw2 = new BufferedWriter(step2);
-
-                ArrayList s = new ArrayList<>();
-
-                String line;
-
-                while ((line = br.readLine()) != null){
-                    Pattern p = Pattern.compile("/");
-                    Matcher m = p.matcher(line);
-                    s.add(m.replaceAll("\\\\"));
-                }
-
-                for(int i =0; i<s.size();i++){
-                    bw2.write(s.get(i).toString()+"\n");
-                }
-
             }catch (IOException e){
                 System.out.println(e);
             }
