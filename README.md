@@ -87,3 +87,5 @@ https://weatherstack.com/
 
 ## [Day 27 - Reduce string with substring()](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Reduce%20string%20with%20substring())
 
+## [Day 28 - Create Json file and write in](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Create%20%20and%20write%20in%20Json%20file)
+
