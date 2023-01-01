@@ -1,0 +1,122 @@
+import javax.json.Json;
+import javax.json.JsonArray;
+import javax.json.JsonArrayBuilder;
+import javax.json.JsonObject;
+import java.io.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Parser r = new Parser();
+        r.makeJson();
+
+    }
+        protected static class Parser{
+
+            protected Parser(){
+
+            }
+            protected void makeJson() {
+
+                try {
+                    InputStream is = new FileInputStream("/path to file.txt origin");
+                    InputStreamReader isr = new InputStreamReader(is);
+                    BufferedReader buffer = new BufferedReader(isr);
+
+                    String line = buffer.readLine();
+                    StringBuilder builder = new StringBuilder();
+                    JsonArrayBuilder arrayBuilder = Json.createArrayBuilder();
+
+                    while ((line = buffer.readLine()) != null) {
+                        builder.append(line);
+                        line = buffer.readLine();
+
+                        JsonObject model = Json.createObjectBuilder()
+                                .add("chemin",line)
+                                .add("descritpion", line.substring(27, line.length() - 4))
+                                .build();
+                        arrayBuilder.add(model);
+
+                        System.out.println(model);
+                    }
+                    JsonArray array = arrayBuilder.build();
+
+                    FileWriter save = new FileWriter("/ path to file to save.json");
+                    save.write(array.toString());
+                    save.close();
+
+                } catch (IOException e) {
+                    System.out.println(e);
+                }
+            }
+        }
+}
+/*
+package org.example;
+
+import javax.json.Json;
+import javax.json.JsonObject;
+import java.io.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Parser r = new Parser();
+        r.makeJson();
+
+    }
+        protected static class Parser{
+
+            protected Parser(){
+
+            }
+
+            protected void makeJson() {
+
+                JsonObject model= null;
+
+                try {
+                    InputStream is = new FileInputStream("/Users/gregoiredubois/Documents/programmation/java/100_days_of_java/Parse textFile add in json and reduce line with substring/src/main/java/org/example/chemins_cg_gepca.txt");
+                    InputStreamReader isr = new InputStreamReader(is);
+                    BufferedReader buffer = new BufferedReader(isr);
+
+                    String line = buffer.readLine();
+                    StringBuilder builder = new StringBuilder();
+
+                    while ((line = buffer.readLine()) != null) {
+                        builder.append(line).append("\n");
+                        line = buffer.readLine();
+
+                        model = Json.createObjectBuilder()
+                                .add("chemin", line)
+                                .add("descritpion", line.substring(27, line.length() - 4))
+                                .build();
+                        System.out.println(model);
+                    }
+
+                } catch (IOException e) {
+                    System.out.println(e);
+                }
+
+                try {
+                    FileWriter save = new FileWriter("/Users/gregoiredubois/Documents/programmation/java/100_days_of_java/Parse textFile add in json and reduce line with substring/src/main/java/org/example/save.txt");
+                    for(int i =0; i< model.size(); i++){
+                        save.write(model.get(i).toString());
+                    }
+                    save.close();
+
+                }catch (IOException e){
+                    System.out.println(e);
+
+                }
+            }
+        }
+
+
+}
+/*
+model = Json.createObjectBuilder()
+                                .add("chemin", line)
+                                .add("descritpion", line.substring(27, line.length() - 4))
+                                .build();
+                        System.out.println(model);
+
+ */
