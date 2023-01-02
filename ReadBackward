@@ -1,0 +1,19 @@
+public class Main {
+    public static void main(String[] args) {
+        readBackwards rb = new readBackwards("Le code c'est top");
+    }
+
+    protected static class readBackwards{
+
+        protected readBackwards(String mText){
+            this.text = mText;
+
+            int i = this.text.length();
+            while (i>0){
+                System.out.print(this.text.charAt(i-1));
+                i--;
+            }
+        }
+        String text;
+    }
+}
