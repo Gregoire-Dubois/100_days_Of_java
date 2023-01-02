@@ -91,3 +91,5 @@ https://weatherstack.com/
 
 ## [Day 29 - Read String backward](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/ReadBackward)
 
+## [Day 30 - Palindrome verifier](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/PalindromeVerificator)
+
