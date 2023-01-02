@@ -1,0 +1,40 @@
+public class Main {
+    public static void main(String[] args) {
+        Palindrome palindrome = new Palindrome();
+        palindrome.palindrome("radar");
+    }
+
+    protected static class Palindrome{
+
+        protected Palindrome(){
+
+        }
+        static void palindrome(String theWord){
+
+            String word = theWord;
+            int begin =0;
+            int end = word.length()-1;
+
+            int points = 0;
+
+            int i =0;
+
+            while (i<word.length()){
+
+                if(word.charAt(begin) == word.charAt(end)){
+                    points++;
+                    if (points == word.length()){
+                        System.out.println("le mot est un palindrome");
+                    }
+                }
+                begin++;
+                end--;
+                i++;
+            }
+            if (points<word.length()){
+                System.out.println("le mot n'est pas un palindrome");
+            }
+
+        }
+    }
+}
