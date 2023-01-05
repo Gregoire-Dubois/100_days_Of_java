@@ -93,4 +93,4 @@ https://weatherstack.com/
 
 ## [Day 30 - Palindrome verifier](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/PalindromeVerificator)
 
-## [Day 31 - Palindrome verifier](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Integer%20parser%20in%20string)
+## [Day 31 - integer parser in string](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Integer%20parser%20in%20string)
