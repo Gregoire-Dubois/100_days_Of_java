@@ -3,15 +3,29 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        Scanner scannNumber = new Scanner(System.in);
+      ParseIntNumbers pin = new ParseIntNumbers();
+      pin.parserString("1345");
+    }
 
-        String number = scannNumber.next();
 
-        int result = 0;
+    protected static class ParseIntNumbers{
 
-        for(int i = 0; i<number.length(); i++) {
-            result = result + Integer.parseInt(String.valueOf(number.charAt(i)));
+        ParseIntNumbers(){
+
         }
-        System.out.println(result);
+
+        protected void parserString(String numberToParse){
+
+            Scanner scannNumber = new Scanner(numberToParse);
+
+            String number = scannNumber.next();
+
+            int result = 0;
+
+            for(int i = 0; i<number.length(); i++) {
+                result = result + Integer.parseInt(String.valueOf(number.charAt(i)));
+            }
+            System.out.println(result);
+        }
     }
 }
