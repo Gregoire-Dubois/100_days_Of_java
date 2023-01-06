@@ -1,7 +1,11 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
 
-        String number = "1345";
+        Scanner scannNumber = new Scanner(System.in);
+
+        String number = scannNumber.next();
 
         int result = 0;
 
