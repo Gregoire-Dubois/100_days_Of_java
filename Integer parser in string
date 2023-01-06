@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
 
       ParseIntNumbers pin = new ParseIntNumbers();
-      pin.parserString("1345");
+      pin.parserString();
     }
 
 
@@ -14,9 +14,9 @@ public class Main {
 
         }
 
-        protected void parserString(String numberToParse){
-
-            Scanner scannNumber = new Scanner(numberToParse);
+        protected void parserString( ){
+            System.out.println("Entrez un nombre entier :");
+            Scanner scannNumber = new Scanner(System.in);
 
             String number = scannNumber.next();
 
