@@ -1,0 +1,45 @@
+import java.io.File;
+
+public class Main {
+    public static void main(String[] args) {
+        Length l = new Length();
+        l.lenghtFile("/path to file");
+        l.lenghtFolder("/path to directory");
+
+    }
+
+    protected static class Length{
+        protected Length(){
+
+        }
+        protected void lenghtFile(String path){
+            try{
+                File file = new File(path);
+
+                System.out.print(file.length() + " bytes \n");
+
+            }catch (SecurityException e){
+                System.out.println(e);
+            }
+        }
+
+        protected void lenghtFolder(String dir){
+
+            File directory = new File(dir);
+
+            try {
+                long filesSize = 0;
+
+                for(File file : directory.listFiles()){
+                    if(file.isFile()){
+                        filesSize += file.length();
+                 }
+             }
+                System.out.println(filesSize + " bytes \n");
+
+        }catch (Exception e){
+                System.out.println(e);
+            }
+        }
+    }
+}
