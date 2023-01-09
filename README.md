@@ -96,3 +96,6 @@ https://weatherstack.com/
 ## [Day 31 - integer parser in string](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Integer%20parser%20in%20string)
 This code parse a numbers in string and make sum of all numbers.
 Exemple 1345 ==> 1+3+4+5 = 13
+
+## [Day 32 - Get file's size and folder's size](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/get%20size%20for%20file%20and%20directory)
+
