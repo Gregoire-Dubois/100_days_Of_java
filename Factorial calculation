@@ -1,0 +1,29 @@
+import java.text.MessageFormat;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Factorial fact = new Factorial();
+        fact.calculateFactorial(10);
+
+    }
+
+    protected static class Factorial{
+
+        Factorial(){
+
+        }
+
+        void calculateFactorial(int numb){
+            double result = 1;
+
+            double number = numb;
+
+            for(double factorial = number; factorial>0; factorial--){
+                result = result * factorial;
+            }
+            String messageOut = MessageFormat.format("Le résultat de {0}! est {1}.", number, result);
+            System.out.println( messageOut);
+        }
+    }
+}
