@@ -103,3 +103,5 @@ The code work only with directory without child folder !
 
 ## [Day 33 - Factorial calculation](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Factorial%20calculation)
 
+## [Day 33 - Calculate Average](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Calculate%20Average)
+
