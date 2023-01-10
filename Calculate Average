@@ -1,0 +1,51 @@
+import java.util.ArrayList;
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        ClassMoyenne cm = new ClassMoyenne();
+        cm.gradeAverage();
+
+    }
+
+    protected static class ClassMoyenne{
+
+        ClassMoyenne(){
+
+        }
+
+        void gradeAverage(){
+            System.out.println("Sur combien de notes devez vous faire la moyenne ?");
+            try {
+                Scanner numberMax = new Scanner(System.in);
+                int maxNumbers = numberMax.nextInt();
+
+                ArrayList<Float> listNumbers = new ArrayList<Float>(maxNumbers);
+
+                int i = 0;
+
+                float number;
+
+                while (i < maxNumbers) {
+                    System.out.println("Entrez une note");
+                    Scanner numberScanner = new Scanner(System.in);
+                    number = numberScanner.nextFloat();
+                    listNumbers.add(number);
+                    i++;
+                }
+
+                float sum = 0;
+
+                for (int n = 0; n < listNumbers.size(); n++) {
+                    sum = sum + listNumbers.get(n);
+                }
+                System.out.println(sum / maxNumbers);
+            }catch (InputMismatchException e) {
+                ;
+                System.out.println("On ne peut faire des moyennes qu'avec des nombres entiers ou des décimaux ;)");
+            }
+        }
+    }
+}
