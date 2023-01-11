@@ -110,4 +110,4 @@ With this code, one number is create. this number is random number beetween 0 an
 User have 5 attempts to find the number.
 If number's user is to small, one notification is send at the user for try bigger.
 If number's user is to big, one notification is send at the user for try smaller.
-Id user find the number, the game is finish, and notification is send and inform it's win.
+If user find the number, the game is finish, and notification is send and inform it's win.
