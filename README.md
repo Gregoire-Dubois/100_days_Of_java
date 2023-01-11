@@ -106,3 +106,8 @@ The code work only with directory without child folder !
 ## [Day 34 - Calculate Average](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Calculate%20Average)
 
 ## [Day 35 - The correct number](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/TheCorrectNumber)
+With this code, one number is create. this number is random number beetween 0 and 100. 
+User have 5 attempts to find the number.
+If number's user is to small, one notification is send at the user for try bigger.
+If number's user is to big, one notification is send at the user for try smaller.
+Id user find the number, the game is finish, and notification is send and inform it's win.
