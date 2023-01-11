@@ -111,3 +111,7 @@ User have 5 attempts to find the number.
 If number's user is to small, one notification is send at the user for try bigger.
 If number's user is to big, one notification is send at the user for try smaller.
 If user find the number, the game is finish, and notification is send and inform it's win.
+
+
+## [Day 36 - Comparator beetween two strings(https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/StringsComparator)
+
