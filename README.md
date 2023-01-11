@@ -105,3 +105,4 @@ The code work only with directory without child folder !
 
 ## [Day 34 - Calculate Average](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Calculate%20Average)
 
+## [Day 35 - The correct number](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/TheCorrectNumber)
