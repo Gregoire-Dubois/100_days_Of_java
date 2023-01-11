@@ -1,0 +1,53 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        StringComparator sc = new StringComparator();
+        sc.comparator();
+
+
+    }
+
+    protected static class StringComparator{
+        StringComparator(){
+
+        }
+
+        private void comparator(){
+            System.out.println("***********************************************************************************");
+            System.out.println("Saisissez un premier mot ou une phrase ou toute chaine de caractères que vous voulez");
+            Scanner scannerWordOne = new Scanner(System.in);
+            String wordOne = scannerWordOne.nextLine();
+
+            System.out.println("***********************************************************************************");
+            System.out.println("Saisissez un second mot ou une phrase ou toute chaine de caractères que vous voulez");
+            Scanner scannerWordTwo = new Scanner(System.in);
+            String wordTwo = scannerWordTwo.nextLine();
+
+            int wordOneLength = 0;
+            int wordTwoLength = 0;
+
+            for (int i =0; i<wordOne.length(); i++){
+                wordOneLength++;
+            }
+
+            for (int i =0; i<wordTwo.length(); i++){
+                wordTwoLength++;
+            }
+
+            if(wordOneLength>wordTwoLength){
+                System.out.println("La chaine de caractères " + wordOne + " est la plus grande " + "avec " + wordOneLength +
+                        " caractères");
+            }
+            if(wordOneLength<wordTwoLength){
+                System.out.println("La chaine de caractères " + wordTwo + " est la plus grande " + "avec " + wordTwoLength +
+                        " caractères");
+            }
+            if(wordOneLength == wordTwoLength){
+                System.out.println("LEs deux chaines de caractères sont identiques avec respectiviement " + wordOneLength +
+                        " et " + wordOneLength + " caractères" );
+            }
+        }
+
+    }
+}
