@@ -58,6 +58,8 @@ In this code, I create class ContactPersonne and reuse it whit differnts members
 
 ## [Day 12 - Sort numbers](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Sort%20numbers)
 
+In this exercice, I create a List. In this List I put 50 randoms numbers. Randoms Numbers are beetween 0 an 100. At the end numbers are sort.
+
 ## [Day 13 - Sort numbers and keep the bigger](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Sort%20numbers%20and%20keep%20the%20bigger)
 
 ## [Day 14 - Creating text file](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Creation%20file)
