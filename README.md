@@ -112,6 +112,8 @@ With this code, a DeleteFolder class is created and takes a path as a parameter.
 
 ## [Day 29 - Read String backward](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/ReadBackward)
 
+With this code, a readBackwards class is created. The readBackwards class takes a string as a parameter. a traversal of the string is carried out from the end to the beginning and the result is displayed in the terminal.
+
 ## [Day 30 - Palindrome verifier](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/PalindromeVerificator)
 
 With this code, a Palindrome class is created. A palindrome method is also created to check if a word placed in parameter is palindrome.
