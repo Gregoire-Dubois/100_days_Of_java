@@ -114,6 +114,8 @@ With this code, a DeleteFolder class is created and takes a path as a parameter.
 
 ## [Day 30 - Palindrome verifier](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/PalindromeVerificator)
 
+With this code, a Palindrome class is created. A palindrome method is also created to check if a word placed in parameter is palindrome.
+
 ## [Day 31 - integer parser in string](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Integer%20parser%20in%20string)
 This code parse a numbers in string and make sum of all numbers.
 Exemple 1345 ==> 1+3+4+5 = 13
