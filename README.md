@@ -131,6 +131,10 @@ The code work only with directory without child folder !
 
 ## [Day 33 - Factorial calculation](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Factorial%20calculation)
 
+For this code, the goal is to ask the user to indicate how many copy notes he wants to save.
+Then a loop is instantiated to ask it for each of the notes one by one.
+Finally the average of the copy notes is indicated in terminal
+
 ## [Day 34 - Calculate Average](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Calculate%20Average)
 
 ## [Day 35 - The correct number](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/TheCorrectNumber)
