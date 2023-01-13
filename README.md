@@ -75,7 +75,7 @@ In this exercise, the objective is to create a text file
 In this exercise, the objective is to create a text file and to write in this file "it's working!".
 
 ## [Day 16 - GET request in API](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Get%20request%20in%20API%20weatherstack)
-In this exercise, the objective is to make a get request on an API and display the return in a print
+In this exercise, the objective is to make a get request on an API and display the return in a print.
 The API is : https://weatherstack.com/
 
 ## [Day 17 - GET access on element in Json file](https://github.com/Gregoire-Dubois/100_days_Of_java/edit/main/Get%20acces%20at%20one%20element%20of%20Json%20file)
