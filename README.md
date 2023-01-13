@@ -110,6 +110,9 @@ With this code, a DeleteFolder class is created and takes a path as a parameter.
 
 ## [Day 28 - Create Json file and write in](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Create%20%20and%20write%20in%20Json%20file)
 
+In this exercise, from a text file opened with InputStream and BufferedReader, the file is browsed in order to place in a Json file a String in the key named "path" and a value in the item named "description".
+The substring() function is used to remove unwanted elements from the description
+
 ## [Day 29 - Read String backward](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/ReadBackward)
 
 With this code, a readBackwards class is created. The readBackwards class takes a string as a parameter. a traversal of the string is carried out from the end to the beginning and the result is displayed in the terminal.
