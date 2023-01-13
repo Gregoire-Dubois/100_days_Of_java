@@ -54,6 +54,8 @@ In this code I approach Inheritance. I create mother class (Personne) and daught
 
 ## [Day 11 - Overload](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Overload%20class)
 
+In this code, I create class ContactPersonne and reuse it whit differnts members.
+
 ## [Day 12 - Sort numbers](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Sort%20numbers)
 
 ## [Day 13 - Sort numbers and keep the bigger](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Sort%20numbers%20and%20keep%20the%20bigger)
