@@ -103,6 +103,11 @@ The user is then asked to complete the URL, User and password fields in order to
 
 ## [Day 22 - GET API and save response in Json file](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Get%20API%20and%20save%20response%20in%20Json%20file)
 
+With this code, a GetRequest class is created and takes a URL and a path as parameters.
+A connection to the API is made with the class URL and URLConnection. The response stream is written to a Json file.
+
+Then a TemperatureDisplay class is created. The TemperatureDisplay class parses the Json file and displays everything first and finally the "current" key
+
 ## [Day 23 - First step with abstract class](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Abstract%20Class)
 
 ## [Day 24 - Display files in child folder with File.walk](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/File%20walk)
