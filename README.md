@@ -72,6 +72,8 @@ In this exercise, the objective is to create a text file
 
 ## [Day 15 - Creating text file and write in](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Create%20and%20write%20in%20text%20file)
 
+In this exercise, the objective is to create a text file and to write in this file "it's working!".
+
 ## [Day 16 - GET request in API](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Get%20request%20in%20API%20weatherstack)
 https://weatherstack.com/
 
