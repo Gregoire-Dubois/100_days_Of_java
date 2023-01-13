@@ -117,6 +117,9 @@ At the end of the execution, the result is displayed in the terminal.
 
 ## [Day 25 - Display files in children folder whith File.walk() and save the result ](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/File%20Walk%20and%20save%20in%20text%20file)
 
+The objective of this code is to retrieve all PDF files located in a folder and its subfolders with the walk() method.
+At the end of the execution, the result is saved in text file.
+
 ## [Day 26 - Modify file text whit RegEX](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Replace%20strings%20and%20caracteres%20in%20file%20text%20with%20RegEX)
 
 ## [Day 27 - Reduce string with substring()](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Reduce%20string%20with%20substring())
