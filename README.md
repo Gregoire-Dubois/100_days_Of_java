@@ -62,6 +62,10 @@ In this exercice, I create a List. In this List I put 50 randoms numbers. Random
 
 ## [Day 13 - Sort numbers and keep the bigger](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Sort%20numbers%20and%20keep%20the%20bigger)
 
+In this exercice, I create a List. 
+In this List I put 100 randoms numbers. 
+Randoms Numbers are beetween 0 an 100. At the end, the bigger number is catch.
+
 ## [Day 14 - Creating text file](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Creation%20file)
 
 ## [Day 15 - Creating text file and write in](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Create%20and%20write%20in%20text%20file)
