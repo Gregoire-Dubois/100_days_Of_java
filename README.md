@@ -92,6 +92,8 @@ In this exercise, the goal is to open a text file and browse it to find a specif
 
 ## [Day 20 - Delete empty folder](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Remove%20folder)
 
+With this code, a DeleteFolder class is created and takes a path as a parameter. when instantiating the class, the user gives the path to an empty folder. If the user accepts the deletion of the empty folder, the folder is deleted, otherwise the deletion is cancelled.
+
 ## [Day 21 - Connect to SQL data base](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Connect%20to%20SQL%20data%20base)
 
 ## [Day 22 - GET API and save response in Json file](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Get%20API%20and%20save%20response%20in%20Json%20file)
