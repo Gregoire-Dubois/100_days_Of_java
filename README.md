@@ -131,6 +131,8 @@ The code work only with directory without child folder !
 
 ## [Day 33 - Factorial calculation](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Factorial%20calculation)
 
+In this code, the objective is to apply the notion of factorial.
+A Factorial class is instantiated and a calculateFactorial() function is created to display the result of the factorial as a formatted message.
 
 ## [Day 34 - Calculate Average](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Calculate%20Average)
 
