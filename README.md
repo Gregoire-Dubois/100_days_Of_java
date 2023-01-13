@@ -80,6 +80,8 @@ The API is : https://weatherstack.com/
 
 ## [Day 17 - GET access on element in Json file](https://github.com/Gregoire-Dubois/100_days_Of_java/edit/main/Get%20acces%20at%20one%20element%20of%20Json%20file)
 
+In this exercise, the goal is to open a Json file, browse it to retrieve an element named "current.
+
 ## [Day 18 - Reade text File](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/ReadeTextFile)
 
 ## [Day 19 - Reade text File and count specific caractere](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/BufferedReader%20and%20count%20letter%20'A'%20in%20text%20file)
