@@ -116,6 +116,10 @@ At the end of the execution, the result is displayed in the terminal.
 
 ## [Day 27 - Reduce string with substring()](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Reduce%20string%20with%20substring())
 
+In this exercise, a Reduce Text class is created. Then a readFile method is created. The readFile method with InputStream and BufferedReader opens a file.
+The file is scanned line by line and with the substring() function the characters between index 0 and 27 are deleted. With length()-4) contained in the substring function, all the last 4 characters of each line are removed.
+Finally the result is displayed in terminal.
+
 ## [Day 28 - Create Json file and write in](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Create%20%20and%20write%20in%20Json%20file)
 
 In this exercise, from a text file opened with InputStream and BufferedReader, the file is browsed in order to place in a Json file a String in the key named "path" and a value in the item named "description".
