@@ -88,6 +88,8 @@ In this exercise, the goal is to open a text file and display its contents in te
 
 ## [Day 19 - Reade text File and count specific caractere](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/BufferedReader%20and%20count%20letter%20'A'%20in%20text%20file)
 
+In this exercise, the goal is to open a text file and browse it to find a specific character. At the end of the execution, the number of occurrences is given.
+
 ## [Day 20 - Delete empty folder](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Remove%20folder)
 
 ## [Day 21 - Connect to SQL data base](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Connect%20to%20SQL%20data%20base)
