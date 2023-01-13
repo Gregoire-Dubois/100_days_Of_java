@@ -122,6 +122,12 @@ At the end of the execution, the result is saved in text file.
 
 ## [Day 26 - Modify file text whit RegEX](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Replace%20strings%20and%20caracteres%20in%20file%20text%20with%20RegEX)
 
+For this lesson, the objective is to browse a text file in order to replace a regular string with the use of RegEx.
+The file contains a list of paths.
+This list originally contains "/Users/gregoiredubois/Documents/CG companies/" in many lines and must be replaced by " "S:\\\\EXCALIBUR\\\\CG companies\\\\".
+
+The result is then saved in a text file.
+
 ## [Day 27 - Reduce string with substring()](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Reduce%20string%20with%20substring())
 
 In this exercise, a Reduce Text class is created. Then a readFile method is created. The readFile method with InputStream and BufferedReader opens a file.
