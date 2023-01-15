@@ -177,6 +177,6 @@ If user find the number, the game is finish, and notification is send and inform
 ## [Day 36 - Comparator beetween two strings](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/StringsComparator)
 In this code, the user write 2 strings and the script return the bigger string with the number of caracteres. 
 
-## [Day 37 - Comparator beetween two strings](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/WordsCounterInString
+## [Day 37 - Comparator beetween two strings](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/WordsCounterInString)
 )
 In this code, class WordsCounter is create. One method is created. This method ask to user to write string and return in terminal number of words in the string.
