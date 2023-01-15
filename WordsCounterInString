@@ -1,0 +1,30 @@
+package org.example;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        WordsCounter wc = new WordsCounter();
+        wc.counter();
+
+    }
+    protected static class WordsCounter{
+        WordsCounter(){
+
+        }
+        protected static void counter(){
+            System.out.println("Entrez une phrase");
+            Scanner phrase = new Scanner(System.in);
+            int numberWords = 0;
+            String stringphrase = phrase.nextLine();
+            String[] words = stringphrase.split(" ");
+            ArrayList<String> arrayWords = new ArrayList<String>();
+
+            for (String word :  words){
+                numberWords++;
+            }
+            System.out.println("La phrase : " + stringphrase + " comprend " + numberWords + " mots.");
+        }
+    }
+}
