@@ -1,0 +1,167 @@
+package org.example;
+import java.sql.*;
+import java.text.MessageFormat;
+
+public class Main {
+    public static void main(String[] args) {
+
+        /*
+        For use this code, you need create instance of class WorkOnDb. and call methode.
+        exemple:
+
+        WorkOnDb connDb = new WorkOnDb();
+
+
+        connDb.create("jdbc:mysql://localhost:3306/baseTest?serverTimezone=UTC",
+                "root",
+                "password",
+                "'Dupont'",  <======== important, you must use this syntaxe " 'bla bla' "
+                "'Jean'",
+                "'1925-11-28'");
+
+                        connDb.del("jdbc:mysql://localhost:3306/baseTest?serverTimezone=UTC",
+                "root",
+                "password",
+                "'Dupont'");
+
+        connDb.modidify("jdbc:mysql://localhost:3306/baseTest?serverTimezone=UTC",
+                "root",
+                "password",
+                "'Dupond'",
+                "'Dupont'");
+
+        connDb.read("jdbc:mysql://localhost:3306/baseTest?serverTimezone=UTC",
+                "root",
+                "password");
+
+
+         */
+
+    }
+    protected static class WorkOnDb {
+
+        WorkOnDb() {
+
+        }
+
+        // method for read database
+        protected void read(String mUrl, String mUser, String mPass) {
+
+            try {
+                this.url = mUrl;
+                this.userName = mUser;
+                this.password = mPass;
+
+                Class.forName("com.mysql.cj.jdbc.Driver");
+
+                Connection connection = DriverManager.getConnection(this.url, this.userName, this.password);
+
+                Statement statement = connection.createStatement();
+
+                ResultSet result = statement.executeQuery("SELECT * FROM contact");
+
+                while (result.next()) {
+                    System.out.println(result.getString(1) + " " + result.getString(2) + " " + result.getString(3));
+
+                }
+                connection.close();
+
+            } catch (SQLException e) {
+                System.out.println(e);
+            } catch (ClassNotFoundException e) {
+                throw new RuntimeException(e);
+            }
+
+        }
+        // method for create row in table's database
+        protected void create(String mUrl, String mUser, String mPass, String mA, String mB, String mC){
+
+            try{
+                this.url = mUrl;
+                this.userName = mUser;
+                this.password = mPass;
+
+                this.nom = mA;
+                this.prenom= mB;
+                this.annif = mC;
+
+                Class.forName("com.mysql.cj.jdbc.Driver");
+                Connection connection = DriverManager.getConnection(this.url, this.userName, this.password);
+                Statement statement = connection.createStatement();
+                String req = MessageFormat.format("INSERT INTO contact VALUES ({0}, {1}, {2})", this.nom, this.prenom, this.annif);
+                statement.executeUpdate(req);
+
+            }catch (SQLException e){
+                System.out.println(e);
+
+            } catch (ClassNotFoundException e) {
+                throw new RuntimeException(e);
+            }
+        }
+
+        // method for delete row's database
+        protected void del(String mUrl, String mUser, String mPass, String mNom){
+            try{
+                this.url = mUrl;
+                this.userName = mUser;
+                this.password = mPass;
+
+                this.nom = mNom;
+
+                Class.forName("com.mysql.cj.jdbc.Driver");
+                Connection connection = DriverManager.getConnection(this.url, this.userName, this.password);
+                Statement statement = connection.createStatement();
+                String req = MessageFormat.format("DELETE FROM contact WHERE nom={0}",this.nom);
+                statement.executeUpdate(req);
+
+                // statement.executeUpdate("INSERT INTO contact VALUES ('Mancel', 'Michel','1919-10-28')");
+
+            }catch (SQLException e){
+                System.out.println(e);
+
+            } catch (ClassNotFoundException e) {
+                throw new RuntimeException(e);
+            }
+        }
+
+        // method for mofify cels in database
+        protected void modidify(String mUrl, String mUser, String mPass, String mSetName, String mWhereName){
+            try{
+                this.url = mUrl;
+                this.userName = mUser;
+                this.password = mPass;
+
+                this.setName = mSetName;
+                this.whereName = mWhereName;
+
+                Class.forName("com.mysql.cj.jdbc.Driver");
+                Connection connection = DriverManager.getConnection(this.url, this.userName, this.password);
+                Statement statement = connection.createStatement();
+
+                String reqModify = MessageFormat.format("UPDATE contact SET nom={0} WHERE nom={1}", this.setName, this.whereName);
+                statement.executeUpdate(reqModify);
+
+                //UPDATE contact SET nom='mali' WHERE nom='Malifarge'
+
+            } catch (SQLException e) {
+                throw new RuntimeException(e);
+            } catch (ClassNotFoundException e) {
+                throw new RuntimeException(e);
+            }
+
+        }
+
+       String url;
+       String userName;
+       String password;
+
+       String nom;
+       String prenom;
+       String annif;
+
+       String setName;
+       String whereName;
+
+
+    }
+}
