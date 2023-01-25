@@ -1,4 +1,3 @@
-package org.example;
 import java.sql.*;
 import java.text.MessageFormat;
 
@@ -36,7 +35,6 @@ public class Main {
 
 
          */
-
     }
     protected static class WorkOnDb {
 
@@ -74,16 +72,16 @@ public class Main {
 
         }
         // method for create row in table's database
-        protected void create(String mUrl, String mUser, String mPass, String mA, String mB, String mC){
+        protected void create(String mUrl, String mUser, String mPass, String mNom, String mPrenom, String mAnnif){
 
             try{
                 this.url = mUrl;
                 this.userName = mUser;
                 this.password = mPass;
 
-                this.nom = mA;
-                this.prenom= mB;
-                this.annif = mC;
+                this.nom = mNom;
+                this.prenom= mPrenom;
+                this.annif = mAnnif;
 
                 Class.forName("com.mysql.cj.jdbc.Driver");
                 Connection connection = DriverManager.getConnection(this.url, this.userName, this.password);
