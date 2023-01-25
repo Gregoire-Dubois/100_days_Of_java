@@ -179,3 +179,6 @@ In this code, the user write 2 strings and the script return the bigger string w
 
 ## [Day 37 - Words counter in String](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/WordsCounterInString)
 In this code, class WordsCounter is create. One method is created. This method ask to user to write string and return in terminal number of words in the string.
+
+## [Day 38 - Make CRUD operations on MySql Server](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Connect%20to%20Mysql%20and%20make%20CRUD%20operations)
+Create a class to connect to an SQL database and perform CRUD operations
