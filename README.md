@@ -182,20 +182,3 @@ In this code, class WordsCounter is create. One method is created. This method a
 
 ## [Day 38 - Make CRUD operations on MySql Server](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Connect%20to%20Mysql%20and%20make%20CRUD%20operations)
 Create a class to connect to an SQL database and perform CRUD operations
-
-My db is like that :
-SHOW tables;
-+--------------------+
-| Tables_in_basetest |
-+--------------------+
-| contact            |
-+--------------------+
-
-DESCRIBE contact;
-+--------+-------------+------+-----+---------+-------+
-| Field  | Type        | Null | Key | Default | Extra |
-+--------+-------------+------+-----+---------+-------+
-| nom    | varchar(50) | YES  |     | NULL    |       |
-| prenom | varchar(50) | YES  |     | NULL    |       |
-| annif  | date        | YES  |     | NULL    |       |
-+--------+-------------+------+-----+---------+-------+
