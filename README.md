@@ -182,3 +182,8 @@ In this code, class WordsCounter is create. One method is created. This method a
 
 ## [Day 38 - Make CRUD operations on MySql Server](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Connect%20to%20Mysql%20and%20make%20CRUD%20operations)
 Create a class to connect to an SQL database and perform CRUD operations
+
+## [Day 39 - Create database, one table and write in](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Creator%20datababase%2C%20table%20an%20write%20in
+)
+In this exercice, I create database. this database is named numbers. In this database, I create one table named RandomNumbers. 
+I create 500 randoms numbers beetween 0 and 999 and write them in the table
