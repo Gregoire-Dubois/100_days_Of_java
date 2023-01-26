@@ -1,0 +1,99 @@
+import java.sql.*;
+import java.text.MessageFormat;
+import java.util.ArrayList;
+import java.util.Random;
+
+
+public class Main {
+    public static void main(String[] args) {
+        Db db = new Db();
+        db.creteDb();
+        db.createTable();
+        db.datagenerator();
+    }
+
+    protected static class Db{
+
+        Db(){
+
+        }
+        protected void creteDb(){
+            try {
+                String url = "jdbc:mysql://localhost:3306/";
+                String user = "root";
+                String password = "password";
+
+                Connection conn = DriverManager.getConnection(url, user, password);
+                Statement stmt = conn.createStatement();
+                String sql = "CREATE DATABASE numbers";
+                stmt.executeUpdate(sql);
+
+            }catch (SQLException e){
+                System.out.println(e);
+            }
+        }
+
+        protected  void datagenerator(){
+            Random randmoNumbers = new Random();
+            int numbers;
+            ArrayList <Integer> resNumbers = new ArrayList<>();
+            int i = 0;
+
+            while (i<500){
+                numbers = randmoNumbers.nextInt(999);
+                resNumbers.add(numbers);
+                i++;
+            }
+
+            loaderData(resNumbers);
+        }
+
+        protected void createTable(){
+
+            try {
+                String url = "jdbc:mysql://localhost:3306/numbers?serverTimezone=UTC";
+                String user = "root";
+                String password = "password";
+                Class.forName("com.mysql.cj.jdbc.Driver");
+
+                Connection conn = DriverManager.getConnection(url,user,password);
+                Statement stmt = conn.createStatement();
+
+                String makeTable = "CREATE TABLE RandomNumbers(" +
+                        "nombre integer(3))";
+                stmt.executeUpdate(makeTable);
+
+            }catch (SQLException e){
+                System.out.println(e);
+            } catch (ClassNotFoundException e) {
+                throw new RuntimeException(e);
+            }
+        }
+
+        protected void loaderData(ArrayList listNumbers){
+
+            try{
+
+                String url = "jdbc:mysql://localhost:3306/numbers?serverTimezone=UTC";
+                String user = "root";
+                String password = "password";
+
+                Class.forName("com.mysql.cj.jdbc.Driver");
+
+                Connection conn = DriverManager.getConnection(url,user,password);
+                Statement stmt = conn.createStatement();
+
+                for (int i = 0; i < listNumbers.size(); i++){
+                    String requestInsertNumbers = MessageFormat.format("INSERT INTO RandomNumbers VALUES({0})", listNumbers.get(i));
+                    stmt.executeUpdate(requestInsertNumbers);
+                }
+
+            }catch (SQLException e){
+                System.out.println(e);
+
+            } catch (ClassNotFoundException e) {
+                throw new RuntimeException(e);
+            }
+        }
+    }
+}
