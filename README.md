@@ -189,7 +189,7 @@ I create 500 randoms numbers beetween 0 and 999 and write them in the table
 
 ## [Day 40 - Read table in data base](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Read%20Data%20Base%20MySQL)
 In this exercice I reuse the exercice number 39. In the last exercice I Created data base and one table.
-Now I'm connecting at the database, and read the table. 
+Now I'm connecting at the database and read all the table. 
 database is named numbers
 the table is nombre
 
