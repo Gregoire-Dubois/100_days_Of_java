@@ -186,3 +186,6 @@ Create a class to connect to an SQL database and perform CRUD operations
 ## [Day 39 - Create database, one table and write in](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Creator%20datababase%2C%20table%20an%20write%20in)
 In this exercice, I create database. this database is named numbers. In this database, I create one table named RandomNumbers. 
 I create 500 randoms numbers beetween 0 and 999 and write them in the table
+
+## [Day 40 - Read table in data base](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Read%20Data%20Base%20MySQL)
+
