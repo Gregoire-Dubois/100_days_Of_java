@@ -194,4 +194,5 @@ database is named numbers
 the table is nombre
 
 ## [Day 41 - Update data in base](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Update%20in%20MySql)
-
+Previously I created database and load in 500 randoms numbers. Now, the of exercice is replace specific number by an another.
+In this code I replace all numbers 8 by 1 with SQL UPDATE Statement.
