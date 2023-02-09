@@ -193,3 +193,5 @@ Now I'm connecting at the database and read all the table.
 database is named numbers
 the table is nombre
 
+## [Day 41 - Update data in base](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Update%20in%20MySql)
+
