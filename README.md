@@ -203,3 +203,7 @@ In this exercice, I use the delete statement for modify the database.
 For that, I use the SQL statement DELETE and spécify the WHERE_condition to delete data.
 
 ## [Day 43 - Order data in data base MySQL](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Order%20data%20with%20MySQl)
+In this exercice, I reuse the database created in exercice number 39.
+In this data base, 500 random numbers are created.  
+The goal of this exercice is to order all numbers, for that ORDER BY is very useful.
+
