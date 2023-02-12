@@ -208,3 +208,22 @@ In this data base, 500 random numbers are created.
 The goal of this exercice is to order all numbers, for that ORDER BY is very useful.
 
 ## [Day 44 - Join 2 tables in MySQL](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/INNER%20JOIN%20MySql)
+
+In this new exercise, the goal is to join 2 tables from the same database (MySql).
+
+The first table is named "customers" and contains as fields:
+- FirstName
+- LastName
+- Address
+- City
+- Phone
+
+The second table is named "orders" and contains as fields:
+- Customer ID
+- OrderDate
+- ProductName
+- Price
+
+The objective is to display the information common to the 2 tables.
+
+For this the INNER JOIN is used.
