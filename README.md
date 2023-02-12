@@ -187,19 +187,19 @@ Create a class to connect to an SQL database and perform CRUD operations
 In this exercice, I create database. this database is named numbers. In this database, I create one table named RandomNumbers. 
 I create 500 randoms numbers beetween 0 and 999 and write them in the table
 
-## [Day 40 - Read table in data base](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Read%20Data%20Base%20MySQL)
+## [Day 40 - Read table in data base MySQL](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Read%20Data%20Base%20MySQL)
 In this exercice I reuse the exercice number 39. In the last exercice I Created data base and one table.
 Now I'm connecting at the database and read all the table. 
 database is named numbers
 the table is nombre
 
-## [Day 41 - Update data in base](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Update%20in%20MySql)
+## [Day 41 - Update data in data base MySQL](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Update%20in%20MySql)
 Previously I created database and load in 500 randoms numbers. Now, the goal of exercice is replace specific number by an another.
 In this code I replace all numbers 8 by 1 with SQL UPDATE Statement.
 
-## [Day 42 - Delete data in base](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Delete%20specifique%20data%20in%20MySql%20Data%20base)
+## [Day 42 - Delete data in data base MySQL](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Delete%20specifique%20data%20in%20MySql%20Data%20base)
 In this exercice i reuse the database created in exercice number 39.
 In this exercice, I use the delete statement for modify the database. 
 For that, I use the SQL statement DELETE and spécify the WHERE_condition to delete data.
 
-## [Day 43 - Order data in base](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Order%20data%20with%20MySQl)
+## [Day 43 - Order data in data base MySQL](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Order%20data%20with%20MySQl)
