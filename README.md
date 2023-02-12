@@ -196,3 +196,6 @@ the table is nombre
 ## [Day 41 - Update data in base](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Update%20in%20MySql)
 Previously I created database and load in 500 randoms numbers. Now, the goal of exercice is replace specific number by an another.
 In this code I replace all numbers 8 by 1 with SQL UPDATE Statement.
+
+## [Day 42 - Update data in base](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Delete%20specifique%20data%20in%20MySql%20Data%20base)
+
