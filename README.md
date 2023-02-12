@@ -198,4 +198,7 @@ Previously I created database and load in 500 randoms numbers. Now, the goal of 
 In this code I replace all numbers 8 by 1 with SQL UPDATE Statement.
 
 ## [Day 42 - Delete data in base](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Delete%20specifique%20data%20in%20MySql%20Data%20base)
+In this exercice i reuse the database created in exercice number 39.
+In this exercice, I use the delete statement for modify the database. 
+For that, I use the SQL statement DELETE and spécify the WHERE_condition to delete data.
 
