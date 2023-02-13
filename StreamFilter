@@ -11,7 +11,7 @@ public class Main {
         numbers.add(123);
         numbers.add(39);
 
-        numbers.stream().filter(n -> n % 1 == 0)
+        numbers.stream().filter(n -> n % 2 == 0)
                 .forEach(System.out::println);
     }
 }
