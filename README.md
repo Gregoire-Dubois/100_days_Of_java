@@ -227,3 +227,6 @@ The second table is named "orders" and contains as fields:
 The objective is to display the information common to the 2 tables.
 
 For this the INNER JOIN is used.
+
+## [Day 45 - Stream Filter](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/StreamFilter)
+
