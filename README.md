@@ -231,3 +231,7 @@ For this the INNER JOIN is used.
 ## [Day 45 - Stream Filter](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/StreamFilter)
 
 ## [Day 46 - Stream count](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/StreamCountElements)
+This code use Stream interface and count function.
+First of all, an array is created and numbers are registred in.
+Afterwards, stream interface and count methode are used for return the number of elements in the array
+
