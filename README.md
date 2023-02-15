@@ -237,3 +237,5 @@ Afterwards, stream interface and count methode are used for return the number of
 
 ## [Day 47 - Stream reduce](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Stream%20reduce)
 
+## [Day 48 - Stream max](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Stream%20Max%20Int)
+
