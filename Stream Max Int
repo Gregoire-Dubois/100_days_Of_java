@@ -1,0 +1,22 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Random randomNumber = new Random();
+
+        int max = 10;
+        ArrayList<Integer> numbersList = new ArrayList<>();
+
+        int i = 0;
+
+        while (i <max){
+            int x = randomNumber.nextInt(0,500);
+            numbersList.add(x);
+            i++;
+        }
+        System.out.println(numbersList);
+        Integer maxNumber = numbersList.stream().max(Integer::compare).get();
+        System.out.println(maxNumber);
+    }
+}
