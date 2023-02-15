@@ -1,0 +1,10 @@
+import java.util.Arrays;
+
+public class Main {
+    public static void main(String[] args) {
+
+        int [] listNumbers = {1,2,3,11};
+        System.out.println(Arrays.stream(listNumbers)
+                .reduce(0, (a,b) -> a+b));
+    }
+}
