@@ -230,3 +230,4 @@ For this the INNER JOIN is used.
 
 ## [Day 45 - Stream Filter](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/StreamFilter)
 
+## [Day 46 - Stream count](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/StreamCountElements)
