@@ -1,0 +1,12 @@
+import java.util.Arrays;
+
+public class Main {
+    public static void main(String[] args) {
+
+        int [] listNumbers = {56,44,29,69,98};
+
+        System.out.println("Le stream nommé contient " + Arrays.stream(listNumbers)
+                                 .count()
+         + " éléments.");
+    }
+}
