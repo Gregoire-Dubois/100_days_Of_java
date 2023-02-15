@@ -235,3 +235,5 @@ This code use Stream interface and count function.
 First of all, an array is created and numbers are registred in.
 Afterwards, stream interface and count methode are used for return the number of elements in the array
 
+## [Day 47 - Stream reduce](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Stream%20reduce)
+
