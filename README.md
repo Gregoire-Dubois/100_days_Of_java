@@ -239,3 +239,6 @@ Afterwards, stream interface and count methode are used for return the number of
 
 ## [Day 48 - Stream max](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Stream%20Max%20Int)
 
+## [Day 49 - Stream sorted caracters in alphabetical order
+](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Stream%20sorted%20caracters)
+
