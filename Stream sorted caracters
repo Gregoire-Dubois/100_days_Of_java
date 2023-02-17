@@ -1,0 +1,33 @@
+import java.util.ArrayList;
+import java.util.Random;
+
+public class Main {
+    public static void main(String[] args) {
+
+        // instantiation of random modul
+        Random hazard = new Random();
+
+        ArrayList<Integer> codeAscii10 = new ArrayList<>();
+
+        //insert 15 randoms numbers in ArrayList
+        int i = 0;
+        while(i<15){
+            int x = hazard.nextInt(65, 90);
+            codeAscii10.add(x);
+            i++;
+        }
+
+        ArrayList<Character> caracterToInteger = new ArrayList<>();
+
+        for (int n = 0; n <codeAscii10.size(); n++){
+            int c = codeAscii10.get(n);
+            char s = (char)c;
+            caracterToInteger.add(s);
+        }
+
+        System.out.println("Les lettres générées aléatoirement sont : " + caracterToInteger);
+
+        System.out.println("Les lettres triées alphabétiquement sont : "+ caracterToInteger.stream()
+                .sorted().toList());
+    }
+}
