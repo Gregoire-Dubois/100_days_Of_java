@@ -12,17 +12,17 @@ public class Main {
         //insert 15 randoms numbers in ArrayList
         int i = 0;
         while(i<15){
-            int x = hazard.nextInt(65, 90);
-            codeAscii10.add(x);
+            int number = hazard.nextInt(65, 90);
+            codeAscii10.add(number);
             i++;
         }
 
         ArrayList<Character> caracterToInteger = new ArrayList<>();
 
         for (int n = 0; n <codeAscii10.size(); n++){
-            int c = codeAscii10.get(n);
-            char s = (char)c;
-            caracterToInteger.add(s);
+            int intCar = codeAscii10.get(n);
+            char caractere = (char) intCar;
+            caracterToInteger.add(caractere);
         }
 
         System.out.println("Les lettres générées aléatoirement sont : " + caracterToInteger);
