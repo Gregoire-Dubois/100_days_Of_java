@@ -266,3 +266,4 @@ Exemple, with teire numbers : 876543, 4, 78, 990.
 If I use higher(0), the first biger number is 4.
 If I use higher(4), the first biger number is 78.
 
+## [Day 53 - enumeration](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Enumeration)
