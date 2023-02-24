@@ -268,5 +268,5 @@ If I use higher(4), the first biger number is 78.
 
 ## [Day 53 - enumeration](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Enumeration)
 
-## [Day 54 - Switc case](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Switch%20case)
+## [Day 54 - Switch case](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Switch%20case)
 
