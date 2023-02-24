@@ -1,0 +1,31 @@
+
+public class Main {
+    public static void main(String[] args) {
+
+        System.out.println(Day.valueOf("JEUDI"));
+        System.out.println("--------------------------");
+
+        for (Day d: Day.values()){
+            System.out.println(d);
+        }
+    }
+
+    public enum Day{
+        LUNDI("Lundi"),
+        MARDI("Mardi"),
+        MERCREDI("Mercredi"),
+        JEUDI("Jeudi"),
+        VENDERDI("Vendredi"),
+        SAMEDI("Samedi"),
+        DIMANCHE("Dimanche");
+
+        private String day;
+        private Day(String mDay){
+            this.day = mDay;
+        }
+
+        public String toString(){
+            return this.day;
+        }
+    }
+}
