@@ -260,3 +260,9 @@ https://fr.wikibooks.org/wiki/Les_ASCII_de_0_%C3%A0_127/La_table_ASCII
 ## [Day 51 - Various exercices with linkedList](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Various%20exercices%20with%20linkedList)
 
 ## [Day 52 - Higher element of TreeSet](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/TreeSetAndHigher)
+In this exercice I used TreeSet and insert in different integers.
+The goal is to display the first biger number after selection.
+Exemple, with teire numbers : 876543, 4, 78, 990.
+If I use higher(0), the first biger number is 4.
+If I use higher(4), the first biger number is 78.
+
