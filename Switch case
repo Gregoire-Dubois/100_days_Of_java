@@ -1,0 +1,44 @@
+public class Main {
+    public static void main(String[] args) {
+        WhatSaison saison = new WhatSaison("décembre");
+
+    }
+
+    protected static class WhatSaison{
+
+        String month;
+        protected WhatSaison(String mMonth){
+            this.month =mMonth;
+
+            switch (month){
+                case "mars":
+                case "avril":
+                case "mai" :
+                    System.out.println("printemps");
+                    break;
+
+                case "juin":
+                case "juillet":
+                case "aout" :
+                    System.out.println("été");
+                    break;
+
+                case "septembre":
+                case "octobre" :
+                case "novembre" :
+                    System.out.println("automne");
+                    break;
+
+                case "décembre":
+                case "janvier" :
+                case "févier"  :
+                    System.out.println("hiver");
+                    break;
+
+                default:
+                    System.out.println("mois inconnu : " + this.month);
+
+            }
+        }
+    }
+}
