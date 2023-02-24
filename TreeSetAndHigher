@@ -1,0 +1,14 @@
+import java.util.TreeSet;
+
+public class Main {
+    public static void main(String[] args) {
+
+        TreeSet<Integer> treeSet = new TreeSet<>();
+        treeSet.add(876543);
+        treeSet.add(4);
+        treeSet.add(78);
+        treeSet.add(990);
+
+        System.out.println(treeSet.higher(991));
+    }
+}
