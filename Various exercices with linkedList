@@ -1,0 +1,28 @@
+import java.util.LinkedList;
+
+public class Main {
+    public static void main(String[] args) {
+
+        LinkedList<String> linkedList = new LinkedList<>();
+
+        linkedList.add("java");
+        linkedList.add("cobol");
+        linkedList.add("php");
+        linkedList.add("python");
+        linkedList.add("C++");
+
+        for(String e : linkedList){ // parse the linkedList
+            System.out.println(e);
+        }
+
+        linkedList.pollLast(); //delete the last element (C++ )
+        linkedList.offerLast("Pascal"); // insert element at the end
+        linkedList.offerFirst("Javascript"); // insert element at the index 0
+        linkedList.remove(2); // remove the element at the last index
+
+        System.out.println(linkedList.contains("python")); // return true if "python" is in linkedList else return false
+
+        System.out.println(linkedList);
+
+    }
+}
