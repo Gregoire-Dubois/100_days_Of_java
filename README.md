@@ -243,13 +243,17 @@ Afterwards, stream interface and count methode are used for return the number of
 
 ## [Day 50 - Create ArrayList and filter data](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/AddDataInArrayListAndFilterIt)
 In this exercice, I create an ArrayList and insert Strings.
-I Use Collection to manipulate date.
+I Use Collection to manipulate data.
+
 In my code, data is : "hello", "world", "how", "are", "you".
 The result is [?, are, hello, how, world, you]
+
 Words are filter by alphabetical order.
 
 But "?" is first. Two notes for this point.
-Result will be differente if string begin with capital letter, and if caractere is not letter. 
+Result will be different if string begin with capital letter, and if caractere is not letter. 
 
-Why ? Beacause the filter is make whit ASCII table. In table ASCII, caractere like "?" is before capital letter, and capital letter is befor lowercase letter.
+Why ? Beacause the filter is make whit ASCII table. 
+In table ASCII, caractere like "?" is before capital letter, and capital letter is befor lowercase letter.
+https://fr.wikibooks.org/wiki/Les_ASCII_de_0_%C3%A0_127/La_table_ASCII
 
