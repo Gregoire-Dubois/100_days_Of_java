@@ -257,3 +257,4 @@ Why ? Beacause the filter is make whit ASCII table.
 In table ASCII, caractere like "?" is before capital letter, and capital letter is befor lowercase letter.
 https://fr.wikibooks.org/wiki/Les_ASCII_de_0_%C3%A0_127/La_table_ASCII
 
+## [Day 51 - Various exercices with linkedList](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Various%20exercices%20with%20linkedList)
