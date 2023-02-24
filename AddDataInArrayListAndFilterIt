@@ -1,0 +1,26 @@
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class Main {
+    public static void main(String[] args) {
+        UseArrayList ua = new UseArrayList();
+    }
+
+    protected static class UseArrayList{
+
+        UseArrayList(){
+
+            ArrayList<String> myArrayList = new ArrayList<>();
+
+            myArrayList.add("hello");
+            myArrayList.add("world");
+            myArrayList.add("how");
+            myArrayList.add("are");
+            myArrayList.add("you");
+
+            Collections.sort(myArrayList);
+            System.out.println(myArrayList);
+        }
+
+    }
+}
