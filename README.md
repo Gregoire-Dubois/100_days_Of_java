@@ -270,3 +270,5 @@ If I use higher(4), the first biger number is 78.
 
 ## [Day 54 - Switch case](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Switch%20case)
 
+## [Day 55 - GET request on API](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Resquest%20GET%20on%20API)
+
