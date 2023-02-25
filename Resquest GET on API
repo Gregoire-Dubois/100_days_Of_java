@@ -1,0 +1,50 @@
+import com.google.gson.*;
+
+import java.io.*;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.util.*;
+
+public class Main {
+
+    public static void main(String[] args) throws IOException {
+        try {
+            // create URL for request
+            URL url = new URL("https://www.infoclimat.fr/public-api/gfs/json?_ll=48.85341,2.3488&_auth=CRNRRgN9ACJ" +
+                    "UeVBnVSNXfgNrUmdaLAIlBXkAYw1oUi8IY1Q1UTEBZ1Y4AH1VelBmU35SMVtgCDhQO1EpDnxfPgljUT0DaABnVDtQNVV6V3wDLV" +
+                    "IzWnoCJQVlAGINflIwCGNUMFEsAWJWOwB8VWdQbFN%2FUi1bZQg2UDRRMQ5gXz0JYlE0A2UAalQkUC1VY1dgA2ZSO1oxAjIFZgA" +
+                    "yDWRSNwhoVDVROwFkVicAYFVlUGNTY1IxW2EIMFAyUSkOfF9FCRlRKAMgACBUblB0VXhXNgNuUmY%3D&_c=604f481fd29ceaf1" +
+                    "d9919f2a10c8897a");
+
+
+            // connect to the URL
+            HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+            connection.setRequestMethod("GET");
+            connection.connect();
+
+            int responseCode = connection.getResponseCode();
+
+            if (responseCode != 200){
+                throw new RuntimeException("HttpResponseCode : " + responseCode);
+            }else {
+
+                StringBuilder infomrationString = new StringBuilder();
+                Scanner scanner = new Scanner(url.openStream());
+
+                while (scanner.hasNext()){
+                    infomrationString.append(scanner.nextLine());
+
+                }
+                scanner.close();
+
+                JsonParser parse = new JsonParser();
+                JsonObject dataObject = (JsonObject) parse.parse(infomrationString.toString());
+
+                System.out.println(dataObject.getAsJsonObject("2023-02-24 22:00:00").get("temperature"));
+            }
+
+        }catch (Exception e){
+            System.err.println(e);
+        }
+    }
+}
