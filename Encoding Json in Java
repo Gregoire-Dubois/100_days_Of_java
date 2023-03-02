@@ -1,0 +1,13 @@
+public class Main {
+    public static void main(String[] args) {
+
+        JSONObject jsonObject = new JSONObject();
+        jsonObject.put("Nom", "Dubois");
+        jsonObject.put("Prénom", "Grégoire");
+        jsonObject.put("age", 37);
+        jsonObject.put("ville", "Top secret");
+
+        System.out.println(jsonObject);
+
+    }
+}
