@@ -272,3 +272,6 @@ If I use higher(4), the first biger number is 78.
 
 ## [Day 55 - GET request on API](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Resquest%20GET%20on%20API)
 https://www.infoclimat.fr/api-previsions-meteo.html?id=2988507&cntry=FR
+
+## [Day 56 - Encoding Json in Java](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Encoding%20Json%20in%20Java)
+
