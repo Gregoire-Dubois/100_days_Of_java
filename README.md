@@ -275,3 +275,5 @@ https://www.infoclimat.fr/api-previsions-meteo.html?id=2988507&cntry=FR
 
 ## [Day 56 - Encoding Json in Java](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Encoding%20Json%20in%20Java)
 
+## [Day 57 - Parse string with JsonObject and JsonParser](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Parse%20string%20with%20JsonObject%20and%20JsonParser)
+
