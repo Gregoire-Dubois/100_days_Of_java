@@ -277,3 +277,4 @@ https://www.infoclimat.fr/api-previsions-meteo.html?id=2988507&cntry=FR
 
 ## [Day 57 - Parse string with JsonObject and JsonParser](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Parse%20string%20with%20JsonObject%20and%20JsonParser)
 
+## [Day 58 - Display date and hour](https://github.com/Gregoire-Dubois/100_days_Of_java/blob/main/Display%20date%20and%20hour%20(now)))
