@@ -1,0 +1,19 @@
+import java.time.LocalDateTime;
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
+
+import static java.time.format.FormatStyle.*;
+
+public class Main {
+    public static void main(String[] args) {
+
+        LocalDateTime dayLocalDate = LocalDateTime.now();
+        String day = dayLocalDate.format(DateTimeFormatter.ISO_LOCAL_DATE);
+
+        LocalTime time = LocalTime.now();
+        String hour = time.format(DateTimeFormatter.ofLocalizedTime(SHORT));
+
+        System.out.println("Aujourd'hui nous somme le " + day +" et il est " + hour);
+
+    }
+}
