@@ -1,0 +1,22 @@
+import java.time.*;
+import java.time.format.DateTimeFormatter;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        LocalDate today = LocalDate.now();
+        System.out.println("Entrez vote date de naissance sous le format AAAA/MM/DD :");
+        Scanner dateBirthday = new Scanner(System.in);
+
+        String birthday = dateBirthday.next();
+
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy/MM/dd");
+        LocalDateTime localDateTime = LocalDate.parse(birthday,formatter).atStartOfDay();
+
+        Period beetween = Period.between(LocalDate.from(localDateTime), today);
+
+        System.out.println("La période entre " + today + " et " + birthday + " est : " + beetween.getYears() + " ans " + beetween.getMonths() + " mois " + beetween.getDays() + " jours");
+
+    }
+}
